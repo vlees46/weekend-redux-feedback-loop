@@ -16,11 +16,11 @@ let defaultStore = {
 
 // Create reducer, manages all change of state from various components
 
-const feedbackReducer = ( state = defaultStore. action) => {
-    if (action type === "ADD_FEELING") {
-        return {...state, feeling: aciton.payload };
+const feedbackReducer = (state = defaultStore, action) => {
+    if (action.type === "ADD_FEELING") {
+        return {...state, feeling: action.payload };
     }
-
+    return state;
 }
 
 const storeInstance = createStore(
@@ -29,9 +29,9 @@ const storeInstance = createStore(
             feedbackReducer
         }
 
-    )
-           applyMiddleware(logger)
-)
+    ),
+         applyMiddleware(logger)
+);
 
 ReactDOM.render(
 <Provider store={storeInstance}>

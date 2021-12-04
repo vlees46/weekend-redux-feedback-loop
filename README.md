@@ -11,7 +11,7 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 
 ##HIGH Level Development Plan
 
-1. Create feeling page
+1. Create 4 views 
     a. components
         i. Input field number
             a. check for validation, user must input a value
