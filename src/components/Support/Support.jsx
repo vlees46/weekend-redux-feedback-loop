@@ -20,7 +20,7 @@ const submitSupported = (event) => {
   event.preventDefault();
   if ( 1 <= howYouSupported && 10 >= howYouSupported) {
     copyFeedback.howYouSupported = howYouSupported;
-    console.log('This is how your feeling', copyFeedback);
+    console.log('This is how you feel supported', copyFeedback);
     dispatch({
       type: 'ADD_SUPPORT', 
       payload: howYouSupported        
