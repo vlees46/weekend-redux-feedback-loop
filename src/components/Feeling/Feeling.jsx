@@ -53,7 +53,7 @@ function Feeling({copyFeedback}){
                                 textAlign: 'left' 
                             }}
                         />
-                        <div class="nextButton">
+                        <div className="nextButton">
                             <button
                                 variant="contained" size="small" color="secondary" type="submit">Next</button>
                         </div>
