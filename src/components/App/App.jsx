@@ -11,6 +11,7 @@ import Understanding from '../Understanding/Understanding.jsx'
 import Support from '../Support/Support.jsx'
 import Comments from '../Comment/Comment.jsx'
 import Review from '../Review/Review.jsx'
+import Thankyou from '../ThankYou/Thankyou.jsx'
 
 function App() {
 
@@ -47,6 +48,10 @@ return (
 
        <Route path='/Review' exact>
          <Review copyFeedback={copyFeedback} />
+       </Route>
+
+       <Route path='/Thankyou' exact>
+         <Thankyou copyFeedback={copyFeedback} />
        </Route>
 
    </Router>
