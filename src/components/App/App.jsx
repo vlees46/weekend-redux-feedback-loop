@@ -8,6 +8,8 @@ import './App.css';
 import Header from '../Header/Header.jsx'
 import Feeling from '../Feeling/Feeling.jsx';
 import Understanding from '../Understanding/Understanding.jsx'
+import Support from '../Support/Support.jsx'
+import Comments from '../Comment/Comment.jsx'
 
 function App() {
 
@@ -33,6 +35,14 @@ return (
 
        <Route path='/Understanding' exact>
          <Understanding copyFeedback={copyFeedback} />
+       </Route>
+
+       <Route path='/Support' exact>
+         <Support copyFeedback={copyFeedback} />
+       </Route>
+
+       <Route path='/Comments' exact>
+         <Comments copyFeedback={copyFeedback} />
        </Route>
 
    </Router>
