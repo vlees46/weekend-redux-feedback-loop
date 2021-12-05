@@ -1,12 +1,11 @@
 # Project Name
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+Redux Feedback Loop
 
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
+ For the Redux Feedback loop , in which collects user suppled information regarding how the feel, understand, and feel supported during each day of Prime Digital Academt lessons.  Basically a check up on how the student preceive things are goign and or learning from this immersive experience.  The Prime staff is then able to review these comments and provice feedback during the class which runs Monday to Friday 9am to 5pm CST.
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
 
 ## Redux Feedback Loop Demostration
 ![Redux Feedback Loop Demo](/public/images/Animation.gif)
@@ -14,13 +13,13 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 
 ## HIGH Level Development Plan
 
-1. Create 4 views 
-    a. Components
-        i. Input field number for numeric values and 1 text input value
-            a. check for validation, user must input a value
-            b. NEXT Button - store user data into array and then calls next FORM
-2. The above logic is for all user supplied input afterwards
-    1. User will be able to review there submissions via - REVIEW COMPONENT
-        a. REVIEW COMPONENT - will have a SUBMIT button which will POST data to database
+- [x] 1. Create 4 views 
+        a. Components
+        b. Input field number for numeric values and 1 text input value
+            i. check for validation, user must input a value
+            ii. NEXT Button - store user data into array and then calls next FORM
+- [x] 2. The above logic is for all user supplied input afterwards
+        a. User will be able to review there submissions via - REVIEW COMPONENT
+        b. REVIEW COMPONENT - will have a SUBMIT button which will POST data to database
             i. After user will see a submission success page
 
