@@ -10,6 +10,7 @@ import Feeling from '../Feeling/Feeling.jsx';
 import Understanding from '../Understanding/Understanding.jsx'
 import Support from '../Support/Support.jsx'
 import Comments from '../Comment/Comment.jsx'
+import Review from '../Review/Review.jsx'
 
 function App() {
 
@@ -18,7 +19,6 @@ function App() {
   let copyFeedback = {};
 
   const dispatch = useDispatch();
-
 
 
 return (
@@ -43,6 +43,10 @@ return (
 
        <Route path='/Comments' exact>
          <Comments copyFeedback={copyFeedback} />
+       </Route>
+
+       <Route path='/Review' exact>
+         <Review copyFeedback={copyFeedback} />
        </Route>
 
    </Router>
