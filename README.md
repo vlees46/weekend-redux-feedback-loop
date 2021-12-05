@@ -13,13 +13,12 @@ Redux Feedback Loop
 
 ### HIGH Level Development Plan
 
-- [x] 1. Create 4 views 
-        a. Components
-        b. Input field number for numeric values and 1 text input value
-            i. check for validation, user must input a value
-            ii. NEXT Button - store user data into array and then calls next FORM
-- [x] 2. The above logic is for all user supplied input afterwards
-        a. User will be able to review there submissions via - REVIEW COMPONENT
-        b. REVIEW COMPONENT - will have a SUBMIT button which will POST data to database
-            i. After user will see a submission success page
+- [x] Create 4 views 
+- [x] Input field numeric values and 1 text input value
+    - [x] check for validation, user must input a value
+    - [x] NEXT Button - store user data into array and then calls next FORM
+- [x] The above logic is for all user supplied input afterwards
+- [x] User will be able to review there submissions via - REVIEW COMPONENT
+- [x] REVIEW COMPONENT - will have a SUBMIT button which will POST data to database
+    - [x] After user will see a submission success page
 
