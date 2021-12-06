@@ -10,10 +10,10 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 
 
 let defaultStore = {
-     feeling: '',
-     understanding: '',
-     support: '',
-     comments: ''
+    feeling: '',
+    understanding: '',
+    support: '',
+    comments: ''
 }
 console.log(defaultStore);
 
@@ -34,29 +34,30 @@ const feedbackReducer = (state = defaultStore, action) => {
     }
     else if (action.type === "CLEAR_STORE") {
         return {...state,
-        feeling: '',
-        comments: '',
-        understanding: '',
-        support: '',}
-    }
-    return state;
-}
-
-console.log(feedbackReducer);
-
-const storeInstance = createStore(
-    combineReducers(
-        {
-            feedbackReducer
+            feeling: '',
+            comments: '',
+            understanding: '',
+            support: '',}
         }
-
-    ),
-         applyMiddleware(logger)
-);
-
-ReactDOM.render(
-<Provider store={storeInstance}>
-    <App />
-</Provider>
-    , document.getElementById('root'));
-registerServiceWorker();
+        return state;
+    }
+    
+    console.log(feedbackReducer);
+    
+    const storeInstance = createStore(
+        combineReducers(
+            {
+                feedbackReducer
+            }
+            
+            ),
+            applyMiddleware(logger)
+            );
+            
+            ReactDOM.render(
+                <Provider store={storeInstance}>
+                <App />
+                </Provider>
+                , document.getElementById('root'));
+                registerServiceWorker();
+                

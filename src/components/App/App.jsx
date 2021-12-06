@@ -14,51 +14,52 @@ import Review from '../Review/Review.jsx'
 import Thankyou from '../ThankYou/Thankyou.jsx'
 
 function App() {
-
-  // Create a copy of the app 
-
-  let copyFeedback = {};
-
-  const dispatch = useDispatch();
-
-
-return (
-
-
-  <div className='App'>
-    <Router>
-
-      <Header />
-
-        <Route path='/' exact>
-         <Feeling copyFeedback={copyFeedback} />
-       </Route>
-
-       <Route path='/Understanding' exact>
-         <Understanding copyFeedback={copyFeedback} />
-       </Route>
-
-       <Route path='/Support' exact>
-         <Support copyFeedback={copyFeedback} />
-       </Route>
-
-       <Route path='/Comments' exact>
-         <Comments copyFeedback={copyFeedback} />
-       </Route>
-
-       <Route path='/Review' exact>
-         <Review copyFeedback={copyFeedback} />
-       </Route>
-
-       <Route path='/Thankyou' exact>
-         <Thankyou copyFeedback={copyFeedback} />
-       </Route>
-
-   </Router>
-  </div>
-
-  );
   
-}
-
-export default App;
+  // Create a copy of the app 
+  
+  let copyFeedback = {};
+  
+  const dispatch = useDispatch();
+  
+  
+  return (
+    
+    // These are routes paths for the application components
+    <div className='App'>
+    <Router>
+    
+    <Header />
+    
+    <Route path='/' exact>
+    <Feeling copyFeedback={copyFeedback} />
+    </Route>
+    
+    <Route path='/Understanding' exact>
+    <Understanding copyFeedback={copyFeedback} />
+    </Route>
+    
+    <Route path='/Support' exact>
+    <Support copyFeedback={copyFeedback} />
+    </Route>
+    
+    <Route path='/Comments' exact>
+    <Comments copyFeedback={copyFeedback} />
+    </Route>
+    
+    <Route path='/Review' exact>
+    <Review copyFeedback={copyFeedback} />
+    </Route>
+    
+    <Route path='/Thankyou' exact>
+    <Thankyou copyFeedback={copyFeedback} />
+    </Route>
+    
+    </Router>
+    </div>
+    
+    );
+    
+  }
+  
+  export default App;
+  
